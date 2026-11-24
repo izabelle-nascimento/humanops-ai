@@ -1,0 +1,12 @@
+
+resource_id,resource_name,category,environment,cpu_p95,memory_p95,monthly_cost,optimized_cost
+VM001,Web Server Cluster,Compute,Production,72,65,8000,8000
+VM002,Application Server,Compute,Production,22,31,6000,3500
+VM003,Development Server,Compute,Development,12,18,5000,1500
+VM004,QA Environment,Compute,Testing,8,15,5000,1500
+VM005,Legacy Server,Compute,Production,10,20,4000,2500
+ST001,Production Storage,Storage,Production,0,0,6000,5000
+ST002,Unused Storage,Storage,Development,0,0,4000,2500
+LC001,Enterprise Licenses,Licensing,Corporate,0,0,5000,4000
+LC002,Unused Licenses,Licensing,Corporate,0,0,3000,2500
+OP001,Operational Services,Operations,Corporate,0,0,4000,3500

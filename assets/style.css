@@ -1,0 +1,331 @@
+
+/* HUMANOPS AI — BLACK FRIDAY EDITION */
+
+:root {
+    --black: #050505;
+    --surface: #111111;
+    --border: #292929;
+    --gold: #D4AF37;
+    --champagne: #C9A66B;
+    --white: #F5F5F5;
+    --muted: #999999;
+}
+
+/* Global layout */
+
+.stApp {
+    background: #050505;
+    color: var(--white);
+}
+
+.block-container {
+    max-width: 1500px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+[data-testid="stHeader"] {
+    background: #050505;
+}
+
+[data-testid="stSidebar"] {
+    background: #0A0A0A;
+    border-right: 1px solid var(--border);
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+/* Brand */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.brand-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    color: var(--gold);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.brand-name {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.brand-name span {
+    color: var(--gold);
+}
+
+.brand-description {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 2px;
+}
+
+/* Black Friday hero */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            ellipse at top right,
+            rgba(212, 175, 55, 0.15),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #171717,
+            #080808
+        );
+    border: 1px solid #403622;
+    border-radius: 18px;
+    padding: 42px;
+    margin-bottom: 25px;
+}
+
+.hero-label {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.08;
+    margin: 22px 0;
+}
+
+.hero-title span {
+    color: var(--gold);
+}
+
+.hero-description {
+    color: #AAAAAA;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+/* KPI cards */
+
+[data-testid="stMetric"] {
+    background: linear-gradient(
+        145deg,
+        #161616,
+        #0D0D0D
+    );
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    min-height: 130px;
+    transition: all 0.2s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    border-color: #806B35;
+    transform: translateY(-2px);
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--gold);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Navigation */
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 25px;
+    border-bottom: 1px solid var(--border);
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 4px;
+}
+
+.stTabs [aria-selected="true"] {
+    color: var(--gold) !important;
+}
+
+.stTabs [data-baseweb="tab-highlight"] {
+    background-color: var(--gold);
+}
+
+/* Charts */
+
+[data-testid="stPlotlyChart"] {
+    background: #111111;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Buttons */
+
+.stButton > button {
+    background: #151515;
+    color: var(--gold);
+    border: 1px solid #5C4D2A;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background: var(--gold);
+    color: #050505;
+    border-color: var(--gold);
+}
+
+/* Status */
+
+.status-online {
+    color: #34D399;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+/* Information panel */
+
+.info-panel {
+    background: #111111;
+    border: 1px solid #403622;
+    border-left: 3px solid var(--gold);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 15px 0;
+}
+
+.info-title {
+    color: var(--gold);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    color: #AAAAAA;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Footer */
+
+.footer {
+    color: #777777;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 24px 0;
+}
+
+/* Dividers */
+
+hr {
+    border-color: var(--border);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #353535;
+    border-radius: 8px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 24px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .brand-name {
+        font-size: 21px;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 15px;
+    }
+}
+
+/* Compact executive layout */
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.brand {
+    margin-bottom: 18px;
+}
+
+.hero {
+    padding: 28px 36px;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: clamp(30px, 4vw, 48px);
+    margin: 14px 0;
+}
+
+[data-testid="stMetric"] {
+    padding: 18px;
+    min-height: 105px;
+}
+
+[data-testid="stVerticalBlock"] {
+    gap: 0.85rem;
+}
+
+.footer {
+    padding: 12px 0;
+}
+

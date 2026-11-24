@@ -1,0 +1,78 @@
+
+# ==========================================================
+# HumanOps AI - Git Ignore Configuration
+# ==========================================================
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.streamlit/secrets.toml
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup and temporary files
+*.bak
+*.backup
+*.tmp
+*.old
+*~
+
+# Tests and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+coverage.json
+junit.xml
+.tox/
+.nox/
+
+# Python analysis caches
+.mypy_cache/
+.ruff_cache/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and databases
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated reports
+reports/
+
+# Local AI models
+models/
+*.gguf
+*.safetensors
+
+# Local configuration
+.streamlit/credentials.toml
