@@ -161,12 +161,6 @@ A visual walkthrough of the HumanOps AI platform.
 
 ---
 
-### Dashboard Preview 03
-
-<div align="center">
-  <img src="screenshots/Screenshot_3.png" width="100%" alt="HumanOps AI Preview 3">
-</div>
-
 ---
 
 ### Dashboard Preview 04
